@@ -1,6 +1,6 @@
 # parallelhw1
 
-#-Compiling and running
+# Compiling and running
 
 1-Go to the directory with primes.cpp
 
@@ -10,11 +10,11 @@ __g++ -std=c++11 primes.cpp -o primes -lpthread__
 
 3-Run the following command:
 
-__./primes
+__./primes__
 
 4-Check primes.txt or console for results
 
-#-Theory
+# Theory
 
 Finds prime numbers between 2 and 10^8
 
@@ -24,11 +24,11 @@ The threads take turns taking an integer to calculate with the use of locks and 
 
 The algorithm has a num_threads variable to test with different threads, this is the runtime when it uses one thread:
 
-![onethread](Images/1thread.png)
+![onethread](images/1thread.png)
 
 Now if we repeat the procress using 8 threads instead
 
-![eight](Images/8thread.png)
+![eight](images/8thread.png)
 
 Unfortunately it was not faster, this is due to the way I implemented a parallel sieve.
 
